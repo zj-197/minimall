@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <scroll-view scroll-y class="content" bindscroll="scrollPosition" scroll-top="{{topPosition}}">
+    <swiper class="topImage" indicator-dots='true' indicator-active-color='#ff5777' autoplay='true' circular='true' interval='3000'>
+      <block wx:for="{{topImages}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" mode='widthFix' class="item-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <shopInfo baseInfo="{{shopDesc}}" />
+    <shopStore storeInfo="{{shopInfo}}" />
+    <skus skus="{{skus}}" desc="{{descd}}" />
+    <itemParams itemInfo="{{itemInfo}}" itemRules="{{itemRules}}" />
+    <rate rate="{{rate}}" />
+    <goodsRec recommend="{{recommend}}" />
+    <back-top wx:if="{{showBackTop}}" bindtap="isShow" />
+  </scroll-view>
+  <bottom-bar bind:addToCart="addToCart"/>
+</view>

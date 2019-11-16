@@ -1,0 +1,12 @@
+<!--pages/detail/childcpn/skus/skus.wxml-->
+<view class="desc">
+  <view class="dot"></view>
+  <view>{{desc}}</view>
+  <view class="rightdot"></view>
+  <view class="clear"></view>
+  <view>穿着效果</view>
+  <block wx:for="{{skus}}" wx:key="{{index}}">
+    <image src="{{item}}" style="width:100%" mode="widthFix"/>
+  </block>
+</view>
+

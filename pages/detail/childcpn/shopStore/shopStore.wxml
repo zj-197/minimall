@@ -1,0 +1,29 @@
+<!--pages/detail/childcpn/shopStore/shopStore.wxml-->
+<view class="storeInfo">
+  <view class="dianpu">
+    <image src="{{storeInfo.logo}}" />
+    <text>{{storeInfo.name}}</text>
+  </view>
+  <view class="dianpuInfo">
+    <view class="left1">
+      <view class="cSells">{{storeInfo.cSells}}</view>
+      <view>总销量</view>
+    </view>
+    <view class="left2">
+      <view class="cGoods">{{storeInfo.cGoods}}</view>
+      <view>全部宝贝</view>
+    </view>
+    <view class="right">
+      <block wx:for="{{storeInfo.score}}" wx:key="{{index}}">
+        <view>
+          <text>{{item.name}}</text>
+          <text class="score">{{item.score}}</text>
+          <text class='{{item.isBetter? "high":"low"}}'>{{item.isBetter ? "高":"低"}}</text>
+        </view>
+      </block>
+    </view>
+    <view class="clear"></view>
+    </view>
+    <text class="goto">进店逛逛</text> 
+  </view>
+  

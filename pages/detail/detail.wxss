@@ -1,0 +1,12 @@
+/* pages/detail/detail.wxss */
+
+.topImage{
+  height: 600rpx;
+}
+.item-image{
+  width: 100%;
+  height: 600rpx;
+}
+.content{
+  height: 100vh;
+}

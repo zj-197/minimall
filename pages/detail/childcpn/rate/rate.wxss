@@ -1,0 +1,29 @@
+/* pages/detail/childcpn/rate/rate.wxss */
+.rate_nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 26rpx;
+  border-bottom: 4rpx solid #f2f2f2;
+  color: #777;
+}
+.uname image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-right: 30rpx;
+}
+.rate_content{
+  padding: 20rpx;
+  color: #777;
+}
+.uname {
+  display: inline-block;
+}
+.user_comment{
+  text-indent: 2em;
+  padding: 24rpx;
+}
+.styles{
+  font-size: 25rpx;
+  padding-bottom: 26rpx;
+}

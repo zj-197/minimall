@@ -1,0 +1,41 @@
+/* pages/detail/childcpn/bottom-bar/bottom-bar.wxss */
+
+.bottom-bar{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background:white;
+  height: 84rpx;
+}
+.bottom-bar-left{
+  padding-top:8rpx;
+  display: flex;
+  width: 55%;
+  font-size: 24rpx;
+  justify-content: space-around;
+  float: left;
+}
+.bottom-bar-left image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.bottom-bar-right {
+  text-align: center;
+  width: 45%;
+  float: right;
+}
+.addCart{
+  display: inline-block;
+ background: yellow;
+ line-height: 84rpx;
+ color: #777;
+ width: 55%;
+}
+.buy{
+ display: inline-block;
+ background: #ff5777;
+ line-height: 84rpx;
+ width: 45%;
+ color: white;
+}

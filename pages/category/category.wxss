@@ -1,0 +1,32 @@
+/* pages/category/category.wxss */
+.category {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.scroll{
+  height: 100%;
+  width: 100%;
+}
+.title {
+  width: 30%;
+}
+
+.content {
+  width: 70%;
+}
+
+.control {
+  position: fixed;
+  left: 30%;
+  right: 0;
+  top: 0;
+  background: snow;
+  line-height: 76rpx;
+  animation: control 1s;
+  z-index: 9;
+}
+ @keyframes control {
+   from{opacity: 0;}
+    to{opacity: 1;}
+ }

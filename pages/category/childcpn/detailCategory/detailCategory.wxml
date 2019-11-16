@@ -1,0 +1,6 @@
+<!--pages/category/childcpn/detailCategory/detailCategory.wxml-->
+
+ <view class="content">
+   <goods product="{{detailCategory}}"/>
+ </view>
+

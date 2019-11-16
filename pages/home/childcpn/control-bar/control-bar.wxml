@@ -1,0 +1,11 @@
+<!--pages/home/childcpn/control-bar/control-bar.wxml-->
+ <view class="tab-control">
+   <text wx:for="{{controltext}}"
+   wx:key="{{index}}"
+   bindtap="activeitem"
+   class='{{currentIndex == index ? "active":""}}'
+   data-index="{{index}}"
+   >
+     <text>{{item}}</text>
+  </text>
+ </view>

@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "shopInfo":"./childcpn/shopInfo/shopInfo",
+    "shopStore":"./childcpn/shopStore/shopStore",
+    "skus":"./childcpn/skus/skus",
+    "itemParams":"./childcpn/itemParams/itemParams",
+    "rate":"./childcpn/rate/rate",
+    "goodsRec":"./childcpn/goodsRec/goodsRec",
+    "bottom-bar":"./childcpn/bottom-bar/bottom-bar",
+    "back-top": "/components/back-top/back-top"
+  },
+  "navigationBarTitleText": "商品详情"
+}

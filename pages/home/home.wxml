@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+  <scroll-view 
+        scroll-y
+        class="content"
+        bindscroll="scrollPosition"
+        scroll-top="{{topPosition}}"
+        bindscrolltolower="loadMore"
+  >
+    <swipers list="{{banners}}"/>
+    <view class="weekpop">
+    <image src="/assets/images/home/recommend_bg.jpg"/>
+    </view>
+    <hot-recommend recommend = "{{recommends}}" 
+    bind:finishLoad="finishLoad"/>
+    <control-bar 
+    controltext="{{['流行','新款','精选']}}"
+    bind:activeIndex="activeIndex" 
+    id="control"
+    />
+     <control-bar 
+    controltext="{{['流行','新款','精选']}}"
+    bind:activeIndex="activeIndex" 
+    wx:if="{{fixed}}"
+      class="control"/>
+    <goods product="{{goods[currentType].list}}"/>
+    <back-top wx:if="{{showBackTop}}" catch:tap="backtop"/>
+  </scroll-view>

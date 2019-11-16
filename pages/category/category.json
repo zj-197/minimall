@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "titleList":"./childcpn/titleList/titleList",
+    "back-top": "/components/back-top/back-top",
+    "subCategory":"./childcpn/subCategory/subCategory",
+    "detailCategory":"./childcpn/detailCategory/detailCategory",
+    "control-bar": "/pages/home/childcpn/control-bar/control-bar"
+  }
+}

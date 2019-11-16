@@ -1,0 +1,13 @@
+<!--pages/category/childcpn/titleList/titleList.wxml-->
+  <scroll-view scroll-y class="content">
+    <view class="list" wx:for="{{titleList}}" wx:key="{{index}}">
+     <view 
+     class="list-item {{isActive==index? 'isActive':''}}" 
+     catchtap="currentType" 
+       data-index="{{index}}">
+       {{item.title}}
+     </view>
+    </view>
+  </scroll-view>
+
+

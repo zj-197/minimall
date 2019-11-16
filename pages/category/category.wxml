@@ -1,0 +1,29 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+
+   <titleList titleList="{{titleList}}" 
+   bind:currentIndex="currentIndex"
+    class="title"
+    />
+    <view class="content">
+     <control-bar controltext="{{['流行','新款','精选']}}"
+        bind:activeIndex= "activeIndex"  
+        wx:if="{{isShow}}"  class="control"
+        />
+     <scroll-view class="scroll" 
+     scroll-y 
+     bindscroll="scrollPosition"
+     scroll-top="{{backtop}}"
+     >
+     <subCategory subCategory="{{categoryData[index].categorySub}}" 
+      bind:finishLoad="finishLoad"
+     />
+      <control-bar controltext="{{['流行','新款','精选']}}"
+        bind:activeIndex= "activeIndex"  class="bar" />
+     <detailCategory 
+  detailCategory="{{categoryData[index].categortype[currentType]}}"/>
+     <back-top wx:if="{{showBackTop}}" catch:tap="backtop"/>
+     </scroll-view>
+     </view>  
+</view>
+

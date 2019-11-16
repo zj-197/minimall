@@ -1,0 +1,18 @@
+<!--pages/detail/childcpn/rate/rate.wxml-->
+<view class="rate_nav">
+  <view>用户评价</view>
+  <view>更多>></view>
+</view>
+<view class="rate_content">
+  <block wx:for="{{rate}}" wx:key="{{index}}">
+    <view class="uname">
+     <image src="{{item.user.avatar}}"/>{{item.user.uname}}</view>
+     <view class="user_comment">
+      {{item.content}}
+     </view>
+     <view class="styles">
+     <text>{{item.created}}</text>
+     <text>{{item.style}}</text>
+     </view>
+  </block>
+</view>

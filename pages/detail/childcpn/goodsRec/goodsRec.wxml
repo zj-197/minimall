@@ -1,0 +1,3 @@
+<!--pages/detail/childcpn/goodsRec/goodsRec.wxml-->
+<view class="recommend">商品推荐</view>
+<goods product="{{recommend}}"/>

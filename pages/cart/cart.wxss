@@ -1,0 +1,61 @@
+/* pages/cart/cart.wxss */
+.icon {
+ margin-right: 30rpx;
+ border: 2rpx solid #777;
+ border-radius: 50%;
+ box-shadow: 2rpx 2rpx 2rpx #888888;
+}
+.cart-item{
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx #f2f2f2 solid;
+}
+
+ .img image{
+  width: 180rpx;
+  height:250rpx;
+  border-radius: 20rpx;
+}
+.cart-item-right{
+  flex: 1;
+  width:400rpx;
+  margin-left: 40rpx;
+}
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  margin-bottom: 40rpx;
+}
+.desc{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+  color: #777;
+}
+.bottom_bar{
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.goPay{
+  text-align: center;
+  width: 200rpx;
+  line-height: 90rpx;
+  background: hotpink;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.content{
+  height: 100vh;
+}

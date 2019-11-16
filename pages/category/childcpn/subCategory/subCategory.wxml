@@ -1,0 +1,13 @@
+<!--pages/category/childcpn/subCategory/subCategory.wxml-->
+<view class="content">
+  <view class="sub">
+    <block wx:for="{{subCategory}}" wx:key="{{index}}">
+    <view class="sub-item">
+      <image src="{{item.image}}" bindload="finishLoad"/>
+      <view>{{item.title}}</view>
+    </view>
+    </block>
+  </view>
+  <view>
+  </view>
+</view>

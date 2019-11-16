@@ -1,0 +1,64 @@
+/* pages/detail/childcpn/shopStore/shopStore.wxss */
+.storeInfo{
+  color: #777;
+  border-bottom: solid 10rpx #f2f2f2;
+}
+.dianpu {
+  padding: 38rpx 18rpx;
+}
+.dianpu image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-right: 28rpx;
+}
+.dianpuInfo {
+  padding: 0rpx 40rpx;
+}
+.clear {
+  clear: both;
+}
+.left1 {
+  float: left;
+}
+.cGoods {
+  margin-bottom: 40rpx;
+  
+}
+.left2{
+  float: left;
+  padding: 0 60rpx;
+  border-right: 2rpx solid gainsboro;
+}
+.cSells{
+  margin-bottom: 40rpx;
+}
+.right{
+  float: right;
+  
+}
+.right view {
+  margin-bottom: 20rpx;
+}
+.score{
+  margin: 0 20rpx;
+}
+
+.high{
+  background: red;
+  color: white;
+  float: right;
+}
+.low {
+  background: green;
+  color: white;
+  float: right;
+}
+.goto{
+  display:block;
+  width: 280rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #f2f2f2;
+  margin: 10rpx auto 50rpx;
+}

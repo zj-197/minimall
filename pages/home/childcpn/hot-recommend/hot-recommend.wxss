@@ -1,0 +1,14 @@
+/* pages/home/childcpn/hot-recommend/hot-recommend.wxss */
+.hot-recommend{
+  width: 100%;
+  margin: 30rpx 0;
+  display:flex; 
+}
+.item {
+   flex: 1;
+   text-align: center;
+ }
+.img {
+  width: 140rpx;
+  height: 140rpx;
+}  

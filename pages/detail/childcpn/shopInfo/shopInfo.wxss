@@ -1,0 +1,51 @@
+/* pages/detail/childcpn/shopInfo/shopInfo.wxss */
+.title{
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+.price{
+  color: red;
+  font-size: 36rpx;
+  padding-left: 14rpx;
+}
+.oldPrice{
+  padding:0 24rpx;
+  text-decoration:line-through;
+}
+.goodsPrice{
+  position: relative;
+}
+.discount{
+  position: absolute;
+  color: black;
+  top:-14rpx;
+  padding: 4rpx;
+  background: hotpink;
+  border-radius: 16rpx;
+}
+.baseInfo {
+  color: #777;
+  padding: 0 14rpx;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 14rpx 0;
+  border-bottom: 4rpx solid #f2f2f2;
+  font-size: 26rpx;
+}
+.service {
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  font-size: 20rpx;
+  border-bottom: 12rpx solid #f2f2f2;
+}
+.service view {
+  margin: 0 10rpx;
+}
+.service view image{
+   width: 20rpx;
+   height: 20rpx;
+}

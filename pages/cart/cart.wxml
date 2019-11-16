@@ -1,0 +1,34 @@
+<!--pages/cart/cart.wxml-->
+<view style="height: 100%;">
+<scroll-view scroll-y class="content">
+  <block wx:for="{{cartList}}" wx:key="{{index}}">
+    <view class="cart-item">
+        <icon class="icon" type="success" size="18"
+         catchtap="changeStatus"
+         color='{{item.checked? "#ff5777": "white"}}'
+         data-index="{{index}}"  
+        ></icon>
+        <view class="img">
+          <image src="{{item.imageURL}}"></image>
+        </view>
+      <view class="cart-item-right">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.desc}}</view>
+        <view>
+          <text style="color:red">￥{{item.price}}</text>
+          <text style="float: right">x{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+    </block>
+  <view class="bottom_bar">
+  <icon class="icon" type="success" size="18"
+         catchtap="changeState"
+         color='{{isSelectAll? "red": "white"}}'
+        ></icon>
+   <view>全选</view>
+   <view style="margin-left:40rpx;">总计:￥{{totalPrice}}</view>
+   <view class="goPay">去结算</view>
+  </view>
+ </scroll-view>
+ </view>

@@ -1,0 +1,12 @@
+<!--pages/home/childcpn/goods/goods.wxml-->
+<view class="goods">
+  <view wx:for="{{product}}" wx:key="{{index}}" class="goodsitem" bindtap="goDetail" data-iid="{{item.iid}}">
+    <image src="{{item.showLarge.img || item.image || item.img}}" mode="widthFix" />
+    <view class="title">{{item.title}}</view>
+    <view class="tips">
+      <text class="price">{{item.price}}</text>
+      <image src="/assets/images/common/favor.png"></image>
+      <text>{{item.cfav}}</text>
+    </view>
+  </view>
+</view>

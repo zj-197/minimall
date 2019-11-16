@@ -1,0 +1,16 @@
+/* pages/category/childcpn/subCategory/subCategory.wxss */
+.sub{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30rpx;
+}
+.sub-item {
+  width: 33%;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.sub-item image {
+  width: 130rpx;
+  height: 130rpx;
+}
+

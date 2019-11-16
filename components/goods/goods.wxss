@@ -1,0 +1,35 @@
+/* pages/home/childcpn/goods/goods.wxss */
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:28rpx;
+}
+.goodsitem{
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+.goodsitem image{
+  width: 100%;
+}
+.tips{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30rpx;
+}
+.tips image{
+  width: 44rpx;
+  height: 44rpx;
+  padding: 0 14rpx;
+}
+ .price{
+  color: red;
+}
+.goodsitem .title{
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ 

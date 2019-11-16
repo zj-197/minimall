@@ -1,0 +1,15 @@
+/* pages/home/childcpn/control-bar/control-bar.wxss */
+.tab-control{
+ display: flex;
+ text-align: center;
+}
+.tab-control text{
+  flex: 1;
+}
+.active{
+  color: red;
+}
+.active text {
+  padding: 10rpx 8rpx;
+  border-bottom: 6rpx solid hotpink
+}

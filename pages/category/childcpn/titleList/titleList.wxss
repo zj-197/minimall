@@ -1,0 +1,21 @@
+/* pages/category/childcpn/titleList/titleList.wxss */
+
+.content {
+  height: 100%;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item{
+  text-align: center;
+  line-height: 80rpx;
+  background: #f2f2f2;
+  border-bottom: 2rpx solid white;
+}
+.isActive {
+  background: white;
+  color: #ff5777;
+  font-weight: 600;
+}

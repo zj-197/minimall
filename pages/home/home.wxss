@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+
+.weekpop image {
+  width: 100%;
+}
+.content{
+  height: 100vh;
+}
+.control {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  line-height: 76rpx;
+  animation: control 1.5s;
+}
+ @keyframes control {
+   from{opacity: 0;}
+    to{opacity: 1;}
+ }

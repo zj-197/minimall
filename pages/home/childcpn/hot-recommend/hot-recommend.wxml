@@ -1,0 +1,10 @@
+<!--pages/home/childcpn/hot-recommend/hot-recommend.wxml-->
+  <view class="hot-recommend">
+    <block wx:for="{{recommend}}" wx:key="{{index}}">
+      <view class="item">
+         <image src="{{item.image}}" class="img"
+         bindload="finishLoad"/>         
+         <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view> 
